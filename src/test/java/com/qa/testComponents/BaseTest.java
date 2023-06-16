@@ -33,7 +33,8 @@ public class BaseTest {
 		FileInputStream fis = new FileInputStream(
 				System.getProperty("user.dir") + "//src//main//java//com//qa//resources//GlobalData.properties");
 		prop.load(fis);
-		String browserName = prop.getProperty("browser");
+		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
+				: prop.getProperty("browser");
 		if (browserName.contains("chrome")) {
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("--remote-allow-origins=*");
