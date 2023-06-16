@@ -1,0 +1,5 @@
+com\qa\resources\ExtentReporterNG.class
+com\qa\pageobjects\ToolsQaAlertsTestsPage.class
+com\qa\pageobjects\ElementsPage.class
+com\qa\pageobjects\ToolsQAWidgetsPage.class
+com\qa\abstractComponents\AbstractComponents.class

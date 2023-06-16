@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="102105" started-at="2023-06-16T05:45:05Z" finished-at="2023-06-16T05:46:47Z">
+    <groups>
+      <group name="smoke">
+        <method signature="ToolsQaElementsTests.elements_CheckBox()[pri:2, instance:com.qa.tests.ToolsQaElementsTests@4c309d4d]" name="elements_CheckBox" class="com.qa.tests.ToolsQaElementsTests"/>
+        <method signature="ToolsQaWidgets.Widgets_AutoComplete()[pri:2, instance:com.qa.tests.ToolsQaWidgets@5609159b]" name="Widgets_AutoComplete" class="com.qa.tests.ToolsQaWidgets"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Alerts" duration-ms="60659" started-at="2023-06-16T05:45:05Z" finished-at="2023-06-16T05:46:05Z">
+      <class name="com.qa.tests.ToolsQaAlertsTests">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:com.qa.tests.ToolsQaAlertsTests@a1cdc6d]" name="launchApplication" is-config="true" duration-ms="53814" started-at="2023-06-16T05:45:05Z" finished-at="2023-06-16T05:45:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="alertOptions()[pri:0, instance:com.qa.tests.ToolsQaAlertsTests@a1cdc6d]" name="alertOptions" duration-ms="6479" started-at="2023-06-16T05:45:58Z" finished-at="2023-06-16T05:46:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertOptions -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.ToolsQaAlertsTests@a1cdc6d]" name="tearDown" is-config="true" duration-ms="331" started-at="2023-06-16T05:46:05Z" finished-at="2023-06-16T05:46:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.ToolsQaAlertsTests -->
+    </test> <!-- Alerts -->
+    <test name="widgets" duration-ms="90210" started-at="2023-06-16T05:45:05Z" finished-at="2023-06-16T05:46:35Z">
+      <class name="com.qa.tests.ToolsQaWidgets">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:com.qa.tests.ToolsQaWidgets@5609159b]" name="launchApplication" is-config="true" duration-ms="47730" started-at="2023-06-16T05:45:05Z" finished-at="2023-06-16T05:45:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="Widgets_AutoComplete()[pri:2, instance:com.qa.tests.ToolsQaWidgets@5609159b]" name="Widgets_AutoComplete" duration-ms="3246" started-at="2023-06-16T05:45:52Z" finished-at="2023-06-16T05:45:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Widgets_AutoComplete -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.ToolsQaWidgets@5609159b]" name="tearDown" is-config="true" duration-ms="271" started-at="2023-06-16T05:45:56Z" finished-at="2023-06-16T05:45:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:com.qa.tests.ToolsQaWidgets@5609159b]" name="launchApplication" is-config="true" duration-ms="37853" started-at="2023-06-16T05:45:56Z" finished-at="2023-06-16T05:46:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="FAIL" signature="widgets_Accordian()[pri:1, instance:com.qa.tests.ToolsQaWidgets@5609159b]" name="widgets_Accordian" duration-ms="388" started-at="2023-06-16T05:46:34Z" depends-on-methods="com.qa.tests.ToolsQaWidgets.Widgets_AutoComplete" finished-at="2023-06-16T05:46:34Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //span[text()="Accordian"]) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[text()="Accordian"])' is not a valid XPath expression.
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-KKBVUFL', ip: '192.168.165.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b79890d05c6cb841b68561d86d65d779, findElement {using=xpath, value=//span[text()="Accordian"])}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ABC\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54815/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b79890d05c6cb841b68561d86d65d779]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //span[text()="Accordian"]) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[text()="Accordian"])' is not a valid XPath expression.
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-KKBVUFL', ip: '192.168.165.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b79890d05c6cb841b68561d86d65d779, findElement {using=xpath, value=//span[text()="Accordian"])}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ABC\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54815/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b79890d05c6cb841b68561d86d65d779
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at com.qa.pageobjects.ToolsQAWidgetsPage.getFirstselectionaccrodian(ToolsQAWidgetsPage.java:41)
+at com.qa.tests.ToolsQaWidgets.widgets_Accordian(ToolsQaWidgets.java:15)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- widgets_Accordian -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.ToolsQaWidgets@5609159b]" name="tearDown" is-config="true" duration-ms="324" started-at="2023-06-16T05:46:35Z" finished-at="2023-06-16T05:46:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.ToolsQaWidgets -->
+    </test> <!-- widgets -->
+    <test name="Elements" duration-ms="102105" started-at="2023-06-16T05:45:05Z" finished-at="2023-06-16T05:46:47Z">
+      <class name="com.qa.tests.ToolsQaElementsTests">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:com.qa.tests.ToolsQaElementsTests@4c309d4d]" name="launchApplication" is-config="true" duration-ms="71101" started-at="2023-06-16T05:45:05Z" finished-at="2023-06-16T05:46:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="elements_TextBox(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.tests.ToolsQaElementsTests@4c309d4d]" name="elements_TextBox" duration-ms="2510" started-at="2023-06-16T05:46:16Z" data-provider="test-data" finished-at="2023-06-16T05:46:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Basavaraj K]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Karantak,India]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bangalore karantak india]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- elements_TextBox -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.ToolsQaElementsTests@4c309d4d]" name="tearDown" is-config="true" duration-ms="233" started-at="2023-06-16T05:46:18Z" finished-at="2023-06-16T05:46:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:com.qa.tests.ToolsQaElementsTests@4c309d4d]" name="launchApplication" is-config="true" duration-ms="26433" started-at="2023-06-16T05:46:19Z" finished-at="2023-06-16T05:46:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="elements_CheckBox()[pri:2, instance:com.qa.tests.ToolsQaElementsTests@4c309d4d]" name="elements_CheckBox" duration-ms="1551" started-at="2023-06-16T05:46:45Z" finished-at="2023-06-16T05:46:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- elements_CheckBox -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.ToolsQaElementsTests@4c309d4d]" name="tearDown" is-config="true" duration-ms="239" started-at="2023-06-16T05:46:47Z" finished-at="2023-06-16T05:46:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.ToolsQaElementsTests -->
+    </test> <!-- Elements -->
+  </suite> <!-- Suite -->
+</testng-results>

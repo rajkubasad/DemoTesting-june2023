@@ -1,0 +1,7 @@
+com\qa\testComponents\Listeners.class
+com\qa\tests\ToolsQaAlertsTests.class
+com\qa\tests\ToolsQaWidgets.class
+com\qa\testComponents\Retry.class
+com\qa\testComponents\BaseTest.class
+com\qa\testData\DataReader.class
+com\qa\tests\ToolsQaElementsTests.class

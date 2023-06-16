@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.testComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Alerts(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.tests.ToolsQaAlertsTests">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="alertOptions"/>
+        </methods>
+      </class> <!-- com.qa.tests.ToolsQaAlertsTests -->
+    </classes>
+  </test> <!-- Alerts(failed) -->
+</suite> <!-- Failed suite [Suite] -->
